@@ -1,6 +1,7 @@
 # Logging-error handling
 
 ![CI pipeline](https://github.com/szemul/logging-error-handling/actions/workflows/php.yml/badge.svg)
+[![codecov](https://codecov.io/gh/szemul/logging-error-handling/branch/main/graph/badge.svg?token=KZJ13OF577)](https://codecov.io/gh/szemul/logging-error-handling)
 
 Provides commonly usable error handlers and logging helpers and a common context to manage contextual data to be
 injected into errors and log messages.

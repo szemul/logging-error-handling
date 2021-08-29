@@ -14,7 +14,7 @@ class SentryArrayHelperTest extends TestCase
 {
     use MockeryPHPUnitIntegration;
 
-    public function testCleanUpArray()
+    public function testCleanUpArray(): void
     {
         $resource = fopen('php://temp', 'w');
         $denied   = Mockery::mock(stdClass::class);
@@ -24,6 +24,7 @@ class SentryArrayHelperTest extends TestCase
             'json' => 'data',
         ];
 
+        // @phpstan-ignore-next-line
         $jsonable->shouldReceive('jsonSerialize')
             ->once()
             ->withNoArgs()
