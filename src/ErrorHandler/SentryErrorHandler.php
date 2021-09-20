@@ -21,6 +21,17 @@ class SentryErrorHandler implements ErrorHandlerInterface
     ) {
     }
 
+    /** @return array<string,mixed>|null */
+    public function __debugInfo(): ?array
+    {
+        return [
+            'sentryClientHub'    => '** Instance of ' . get_class($this->sentryClientHub),
+            'context'            => $this->context,
+            'contextHelper'      => $this->contextHelper,
+            'errorViewerBaseUrl' => $this->errorViewerBaseUrl,
+        ];
+    }
+
     public function handleError(
         int $errorLevel,
         string $message,
