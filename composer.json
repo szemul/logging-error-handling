@@ -3,6 +3,7 @@
     "description": "Provides commonly usable error handlers and logging helpers and a common context to manage contextual data to be injected into errors and log messages.",
     "license": "MIT",
     "minimum-stability": "stable",
+    "abandoned": true,
     "require": {
         "php": "^8.0"
     },
@@ -17,9 +18,9 @@
         "szemul/error-handler": "^1.0.0"
     },
     "suggest": {
-        "monolog/monolog": "For using the monolog formatter",
-        "szemul/error-handler": "For using the sentry error handler",
-        "sentry/sentry": "For using the sentry error handler"
+        "szemul/logging-error-handling-context": "Replaces this package along with the other 2 suggestions",
+        "szemul/monolog-logging-context": "Replaces this package along with the other 2 suggestions",
+        "szemul/sentry-error-handler": "Replaces this package along with the other 2 suggestions"
     },
     "autoload": {
         "psr-4": {
